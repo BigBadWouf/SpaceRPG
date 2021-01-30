@@ -1,0 +1,85 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Item",
+"class": "BLI300",
+"language": "GDScript",
+"path": "res://Items/Energy/BLi-300.gd"
+}, {
+"base": "Item",
+"class": "DoubleSeat",
+"language": "GDScript",
+"path": "res://Items/System/DoubleSeat.gd"
+}, {
+"base": "Item",
+"class": "FireAigle1",
+"language": "GDScript",
+"path": "res://Items/Engine/FireAigle1.gd"
+}, {
+"base": "Resource",
+"class": "Item",
+"language": "GDScript",
+"path": "res://Items/Item.gd"
+}, {
+"base": "Ship",
+"class": "SX750F",
+"language": "GDScript",
+"path": "res://Ships/Freighter/SX750F.gd"
+}, {
+"base": "Node2D",
+"class": "Ship",
+"language": "GDScript",
+"path": "res://Ships/Ship.gd"
+}, {
+"base": "Item",
+"class": "SmallFuelTank",
+"language": "GDScript",
+"path": "res://Items/System/SmallFuelTank.gd"
+}, {
+"base": "Item",
+"class": "StarterShield",
+"language": "GDScript",
+"path": "res://Items/Shield/StarterShield.gd"
+}, {
+"base": "Resource",
+"class": "System",
+"language": "GDScript",
+"path": "res://System/System.gd"
+}, {
+"base": "Item",
+"class": "WCI",
+"language": "GDScript",
+"path": "res://Items/Cooling/WCI.gd"
+} ]
+_global_script_class_icons={
+"BLI300": "",
+"DoubleSeat": "",
+"FireAigle1": "",
+"Item": "",
+"SX750F": "",
+"Ship": "",
+"SmallFuelTank": "",
+"StarterShield": "",
+"System": "",
+"WCI": ""
+}
+
+[application]
+
+config/name="2d space rpg"
+run/main_scene="res://World/World.tscn"
+boot_splash/bg_color=Color( 0, 0, 0, 1 )
+config/icon="res://icon.png"
+
+[rendering]
+
+environment/default_clear_color=Color( 0, 0, 0, 1 )
+environment/default_environment="res://default_env.tres"
